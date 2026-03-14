@@ -1,1 +1,36 @@
+:root {
+    --cream: #F5F0E8;
+    --black: #0A0A0A;   
+    --red: #D63C2F;
+    --gray: #888888;
 
+    --front-display: 'Playfair Display' , serif;
+    --font-body: 'DM Sans' , sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--black);
+}
+.nav-logo{
+    font: var(--front-display);
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.nav-links{
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+}
+.nav-bar{
+    
+}
