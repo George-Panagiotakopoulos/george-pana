@@ -25,8 +25,10 @@ body {
     font-weight: 700;
     text-decoration: none;
     color: var(--black);
+    letter-spacing: -0.5px;
 }
 .nav-links{
+    margin-top: 5px;
     display: flex;
     font-family: var(--font-body);
     font-weight: 500;
@@ -62,6 +64,7 @@ a:hover {
 }
 .hero {
     background-color: var(--cream);
+    position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -86,4 +89,81 @@ a:hover {
     height: 1px;
     background-color: var(--gray);
     
+}
+h1 {
+    font-family: var(--font-display);
+    font-size: clamp(64px, 9vw, 130px);
+    font-weight: 900;
+    line-height: 0.92;
+    letter-spacing: -3px;
+    color: var(--black);
+    margin-bottom: 48px;
+
+}
+.hero-desc {
+    font-family: var(--font-body);
+    color: var(--gray);
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 340px;
+}
+.accent {
+    color: var(--red);
+    font-style: italic;
+}
+.hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.btn-primary {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 16px 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+
+}
+.btn-primary:hover {
+    background-color: var(--red);
+    color: var(--cream);
+}
+.btn-ghost {
+    color: var(--black);
+    opacity: 0.5;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: none;
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.hero-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-bg-text {
+    position: absolute;
+    font-family: var(--font-display);
+    font-weight: 900;
+    color: rgba(0,0,0,0.04);
+    pointer-events: none;
+    user-select: none;
+    font-size: clamp(120px, 18vw, 260px);
+    white-space: nowrap;
+    transform: translate(-50%, -55%);
+    top: 50%;
+    left: 50%;
+    letter-spacing: -10px;
 }
