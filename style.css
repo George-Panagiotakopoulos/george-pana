@@ -196,10 +196,23 @@ h1 {
 .marquee-item {
     color: rgba(255,255,255,0.4);
 }
-h2{
+h2 {
     font-family: var(--font-display);
     font-weight: 700;
     font-size: clamp(40px,5vw,64px);
     line-height: 1.05;
+    letter-spacing: -1px;
     
+}
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 120px;
+    padding: 140px 60px;
+}
+.about-text {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 15px;
 }
