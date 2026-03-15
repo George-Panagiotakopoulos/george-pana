@@ -116,6 +116,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
 }
 .btn-primary {
     display: inline-block;
@@ -166,4 +167,32 @@ h1 {
     top: 50%;
     left: 50%;
     letter-spacing: -10px;
+}
+.marquee-section {
+    background: var(--black);
+    padding: 18px 0;
+    overflow: hidden;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 14px;
+}
+.marquee-track {
+    display: inline-flex;
+    gap: 30px;
+    white-space: nowrap;
+    color: var(--cream);
+    animation: marquee 18s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.marquee-item::after {
+    content: '✦';
+    font-size: 8px;
+    color: var(--red);
+    margin-left: 30px;
+}
+.marquee-item {
+    color: rgba(255,255,255,0.4);
 }
