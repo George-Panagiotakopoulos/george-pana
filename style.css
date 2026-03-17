@@ -106,6 +106,8 @@ h1 {
     font-size: 15px;
     line-height: 1.8;
     font-weight: 300;
+}
+.hero-desc {
     max-width: 340px;
 }
 .accent {
@@ -196,6 +198,9 @@ h1 {
 .marquee-item {
     color: rgba(255,255,255,0.4);
 }
+
+/* ABOUT SECTION */
+
 h2 {
     font-family: var(--font-display);
     font-weight: 700;
@@ -215,4 +220,222 @@ h2 {
     margin-top: 30px;
     margin-bottom: 40px;
     font-size: 15px;
+}
+.about-exp-label {
+    display: block;
+    font-size: 10px;
+
+}
+.about-exp {
+    position: absolute;
+    top: 32px;
+    right: -32px;
+    background: var(--red);
+    color: white;
+    padding: 24px;
+    text-align: center;
+
+}
+.about-exp-num {
+   display: block;
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 48px;
+}
+.right-about {
+    position: relative;
+}
+.about-photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: var(--gray);
+    position: relative;
+    overflow: hidden;
+}
+.about-photo-tag{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--black);
+    color: white;
+    padding: 14px 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.about-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.about-label::before {
+    content: '01';
+    font-family: var(--font-display);
+    color: var(--red);
+}
+
+.projects {
+  padding: 140px 60px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+.projects-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Projects label with 02 */
+.projects-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.projects-label::before {
+  content: '02';
+  font-family: var(--font-display);
+  color: var(--red);
+}
+
+/* View all button */
+.btn-projects {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--black);
+  opacity: 0.4;
+  border-bottom: 1px solid var(--black);
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.btn-projects:hover {
+  opacity: 1;
+}
+
+/* Project rows */
+.project-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 280px 120px 40px;
+  align-items: center;
+  gap: 40px;
+  padding: 36px 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.project-row:last-child {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Hover fill animation */
+.project-row::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--black);
+  transform: translateX(-101%);
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+  z-index: 0;
+}
+
+.project-row:hover::before {
+  transform: translateX(0);
+}
+
+.project-row > * {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.project-row:hover * {
+  color: white;
+}
+
+/* Project number */
+.project-num {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gray-light);
+}
+
+/* Project name */
+.project-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+
+/* Project description */
+.project-desc {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+/* Project tags */
+.project-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.project-tags span {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: var(--gray);
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.project-row:hover .project-tags span {
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* Arrow */
+.project-arrow {
+  font-size: 20px;
+  color: var(--gray);
+  text-align: right;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.project-row:hover .project-arrow {
+  transform: translate(4px, -4px);
+}
+.project-num {
+  color: var(--gray-light);
+  opacity: 30%;
 }
