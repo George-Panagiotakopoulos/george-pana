@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George pana - Web Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>George Pana — Web Developer Καλαμάτα | Μεσσηνία</title>
+  <meta name="description" content="Web developer based in Kalamata, Messinia. I build fast, beautiful websites with HTML, CSS, JavaScript and WordPress. Available for freelance projects.">
+  <meta name="keywords" content="web developer kalamata, web developer messinia, κατασκευή ιστοσελίδων καλαμάτα, ιστοσελίδες μεσσηνία, george pana">
+  <meta name="author" content="George Pana">
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="George Pana — Web Developer">
+  <meta property="og:description" content="Front-end developer in Kalamata, Greece. Available for freelance projects.">
+  <meta property="og:url" content="https://george-pana.gr">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+  ...
 </head>
 <body>
     <nav class="navbar">
@@ -90,13 +102,21 @@
     <a href="#" class="btn-ghost">All Projects →</a>
   </div>
 
-  <a href="#" class="project-row">
+  <a href="https://themelionkataskevastiki.gr" target="_blank" class="project-row">
     <span class="project-num">01</span>
-    <h3 class="project-name">Websites & Local Businesses</h3>
-    <p class="project-desc">Custom WordPress websites and property rental sites, optimized for user experience, performance, and SEO.</p>
+    <h3 class="project-name">Themelion Kataskevastiki</h3>
+    <p class="project-desc">Full website redesign for a construction company in Kalamata. Dark, bold, industrial aesthetic.</p>
     <div class="project-tags"><span>WordPress</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
     <span class="project-arrow">↗</span>
   </a>
+
+  <a href="https://www.lecasediamalia.gr" target="_blank" class="project-row">
+  <span class="project-num">02</span>
+  <h3 class="project-name">Le Case Di Amalia</h3>
+  <p class="project-desc">WordPress website for a local Airbnb rental in Kalamata. Optimized for bookings, user experience and SEO.</p>
+  <div class="project-tags"><span>WordPress</span><span>SEO</span><span>Elementor</span></div>
+  <span class="project-arrow">↗</span>
+</a>
 
   <a href="#" class="project-row">
     <span class="project-num">02</span>
@@ -183,17 +203,17 @@
         </div>
         <span>↗</span>
       </a>
-      <a href="#" class="contact-link">
+      <a href="https://github.com/George-Panagiotakopoulos" class="contact-link">
         <div>
           <div class="contact-link-name">GitHub</div>
-          <div class="contact-link-handle">github.com/georgepana</div>
+          <div class="contact-link-handle">https://github.com/George-Panagiotakopoulos</div>
         </div>
         <span>↗</span>
       </a>
-      <a href="#" class="contact-link">
+      <a href="https://www.linkedin.com/in/george-pana-developer" class="contact-link">
         <div>
           <div class="contact-link-name">LinkedIn</div>
-          <div class="contact-link-handle">linkedin.com/in/georgepana</div>
+          <div class="contact-link-handle">linkedin.com/in/george-pana-developer</div>
         </div>
         <span>↗</span>
       </a>
@@ -214,5 +234,24 @@
   </footer>
 
 <script src="script.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "George Pana",
+  "jobTitle": "Web Developer",
+  "url": "https://george-pana.gr",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Καλαμάτα",
+    "addressRegion": "Μεσσηνία",
+    "addressCountry": "GR"
+  },
+  "sameAs": [
+    "https://github.com/George-Panagiotakopoulos",
+    "https://www.linkedin.com/in/george-pana-developer"
+  ]
+}
+</script>
 </body>
 </html>

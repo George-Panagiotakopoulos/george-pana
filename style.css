@@ -529,14 +529,12 @@ footer {
   color: var(--red);
 }
 .contact .section-label::before {
-  content: '03';
+  content: '04';
   font-family: var(--font-display);
   color: var(--red);
   margin-right: 12px;
 }
-/* --------------------------------
-   SKILLS
-   -------------------------------- */
+
 .skills {
   padding: 140px 60px;
   background: var(--black);
@@ -627,4 +625,79 @@ footer {
   left: 0;
   height: 100%;
   background: var(--red);
+}
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 0 20px 60px;
+  }
+  .hero-bg-text {
+    display: none;
+  }
+  .hero-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  /* ABOUT */
+  .about {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 80px 20px;
+  }
+  .about-exp {
+    right: 0;
+  }
+
+  /* PROJECTS */
+  .projects {
+    padding: 80px 20px;
+  }
+  .projects-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .project-row {
+    grid-template-columns: 50px 1fr 30px;
+    gap: 16px;
+  }
+  .project-desc, .project-tags {
+    display: none;
+  }
+
+  /* SKILLS */
+  .skills {
+    padding: 80px 20px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 48px;
+  }
+
+  /* CONTACT */
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 80px 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 24px 20px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
 }
